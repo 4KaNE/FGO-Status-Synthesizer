@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FGOのサーバントステータス画面のスクリーンショットを合成する</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+    <h1>FGO鯖ステータス画面合成</h1>
+    <div class="main">
+        <div id="canvas-container">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="toolbox">
+            <table id="image-info">
+            </table>
+            <div id="wrapp-download"></div>
+            <h2>使い方</h2>
+            <p>
+                <ol>
+                    <li>左の合成エリアにスクリーンショットをドラッグ&ドロップしてください。</li>
+                    <li>その上に合成したいスクリーンショットを再度ドラッグ&ドロップしてください。<br>常に後から挿入した画像が上のレイヤーになります。</li>
+                    <li>画像の上部/下部をドラッグするとトリミング、画像の中心部分をドラッグすると移動できます。</li>
+                    <li>位置を決定したら「画像を固定する」ボタンをクリックするか、新しい画像を追加することで透過が解除され画像が統合されます。</li>
+                    <li>2,3,4を繰り返し画像の作成が終了したら</li>
+                </ol>
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
